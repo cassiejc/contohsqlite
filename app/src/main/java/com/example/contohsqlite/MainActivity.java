@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
         Log.d("SQLITE", "Membaca isi Database");
         List<Contact> contacts = dbhandler.getAllContacts();
         for (Contact c: contacts){
-            String m = "id: "
+            String m = "id: "+c.getId()+ "Nama: "+c.getName()+ " Phone: "+c.getPhone();
+            Log.d("SQLITE", m);
         }
 
     }
